@@ -3,18 +3,42 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Kannavi</title>
+    <meta name="viewport" content="width=1136,initial-scale=1" />
+    <title>福岡市博物館 | カンナビ</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
+    
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json", {onProgress: UnityProgress});
+      const doc = document.documentElement;
+      const content = document.querySelector(".webgl-content");
+      setInterval(function() {
+        const c = document.querySelector("canvas");
+        if (!c) {
+          return;
+        }
+        if (doc.clientWidth <= c.clientWidth) {
+          const scale = doc.clientWidth / c.clientWidth;
+          content.style.transformOrigin = "top left";
+          content.style.top = content.style.left = "0";
+          content.style.transform = "scale(" + scale + ")";
+        } else {
+          content.style.transformOrigin = "";
+          content.style.top = content.style.left = "";
+          content.style.transform = "";
+        }
+      }, 1000);
+    </script>
+    
+    <script>
+       UnityLoader.SystemInfo.mobile = false;
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/webgl.json", { onProgress: UnityProgress });
     </script>
   </head>
   <body>
     <div class="webgl-content">
-      <div id="unityContainer" style="width: 100wv; height: 100hv"></div>
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
