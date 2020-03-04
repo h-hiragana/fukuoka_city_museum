@@ -8,7 +8,8 @@
     <script src="Build/UnityLoader.js"></script>
     
     <script>
-      UnityLoader.instantiate("unityContainer", "Build/webgl.json");
+      UnityLoader.SystemInfo.mobile = false;
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json", {onProgress: UnityProgress});
     </script>
     
   </head>
