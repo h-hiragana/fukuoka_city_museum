@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -9,11 +10,13 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
+    
     <script>
       UnityLoader.SystemInfo.mobile = false;
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json", {onProgress: UnityProgress});
     </script>
   </head>
+  
   <body>
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px;"></div>
@@ -25,47 +28,48 @@
     </div>
   </body>
   
-    <script>
-      var container;
-      var canvas;
-      var timer = 0;
-  
-      //初期化
-      function init() {
-        canvas = document.getElementById('canvas');
-        container = document.createElement('div');
-        container.style.width = window.innerWidth + 'px';
-        container.style.height = window.innerHeight + 'px';
-        container.style.overflow = 'hidden';
-        container.appendChild(canvas);
-        document.body.appendChild(container);
-        document.body.style.margin = '0px'
-      }
-  
-      //サイズ変更処理
-      function resize() {
-        container.style.width = window.innerWidth + 'px';
-        container.style.height = window.innerHeight + 'px';
-        canvas.width = window.innerWidth * window.devicePixelRatio;
-        canvas.height = window.innerHeight * window.devicePixelRatio;
-      }
-  
-      window.onload = function () {
-        init();
-        resize();
+  <script>
+    var container;
+    var canvas;
+    var timer = 0;
+
+    //初期化
+    function init() {
+      canvas = document.getElementById('unityContainer');
+      container = document.createElement('div');
+      container.style.width = window.innerWidth + 'px';
+      container.style.height = window.innerHeight + 'px';
+      container.style.overflow = 'hidden';
+      container.appendChild(canvas);
+      document.body.appendChild(container);
+      document.body.style.margin = '0px'
+    }
+
+    //サイズ変更処理
+    function resize() {
+      container.style.width = window.innerWidth + 'px';
+      container.style.height = window.innerHeight + 'px';
+      canvas.width = window.innerWidth * window.devicePixelRatio;
+      canvas.height = window.innerHeight * window.devicePixelRatio;
+    }
+
+    window.onload = function () {
+      init();
+      resize();
+    };
+    
+    (function () {
+        var timer = 0;
+        window.onresize = function () {
+        if (timer > 0) {
+          clearTimeout(timer);
+        }
+        timer = setTimeout(function () {
+          resize();
+        }, 200);
       };
-      
-      (function () {
-          var timer = 0;
-          window.onresize = function () {
-          if (timer > 0) {
-            clearTimeout(timer);
-          }
-          timer = setTimeout(function () {
-            resize();
-          }, 200);
-        };
-      }());
-    </script>
+    }());
+    
+  </script>
   
 </html>
