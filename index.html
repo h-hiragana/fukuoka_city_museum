@@ -12,7 +12,12 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     
-    <style>
+    <script>
+      UnityLoader.SystemInfo.mobile = false;
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json", {onProgress: UnityProgress});
+    </script>
+    
+     <style>
       * {
         margin: 0;
         padding: 0;
@@ -28,10 +33,6 @@
       }
     </style>
     
-    <script>
-      UnityLoader.SystemInfo.mobile = false;
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json", {onProgress: UnityProgress});
-    </script>
   </head>
   
   <body>
