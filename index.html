@@ -26,9 +26,13 @@
   </head>
   
   <body>
-    <div class="webgl-content fullscreen">
-      <div id="unityContainer" style="width: 100vw; height: 100vh;"></div>
-    </div>
+    <div id="unityContainer"></div>
   </body>
+  
+  <script>
+    var container = document.getElementById('unityContainer');
+    container.style.width = window.innderWidth * window.devicePixelRatio + 'px';
+    container.style.height = window.innderHeight * window.devicePixelRatio + 'px';
+  </script>
   
 </html>
