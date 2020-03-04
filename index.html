@@ -1,27 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  
-  <script>
-      const doc = document.documentElement;
-      const content = document.querySelector(".webgl-content");
-      setInterval(function() {
-        const c = document.querySelector("canvas");
-        if (!c) {
-          return;
-        }
-        if (doc.clientWidth <= c.clientWidth) {
-          const scale = doc.clientWidth / c.clientWidth;
-          content.style.transformOrigin = "top left";
-          content.style.top = content.style.left = "0";
-          content.style.transform = "scale(" + scale + ")";
-        } else {
-          content.style.transformOrigin = "";
-          content.style.top = content.style.left = "";
-          content.style.transform = "";
-        }
-      }, 1000);
-    </script>
-  
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -46,4 +24,47 @@
       </div>
     </div>
   </body>
+  
+    <script>
+      var container;
+      var canvas;
+      var timer = 0;
+  
+      //初期化
+      function init() {
+        canvas = document.getElementById('canvas');
+        container = document.createElement('div');
+        container.style.width = window.innerWidth + 'px';
+        container.style.height = window.innerHeight + 'px';
+        container.style.overflow = 'hidden';
+        container.appendChild(canvas);
+        document.body.appendChild(container);
+        document.body.style.margin = '0px'
+      }
+  
+      //サイズ変更処理
+      function resize() {
+        container.style.width = window.innerWidth + 'px';
+        container.style.height = window.innerHeight + 'px';
+        canvas.width = window.innerWidth * window.devicePixelRatio;
+        canvas.height = window.innerHeight * window.devicePixelRatio;
+      }
+  
+      window.onload = function () {
+        init();
+        resize();
+      };
+      
+      (function () {
+        var timer = 0;
+        window.onresize = function () {
+        if (timer > 0) {
+          clearTimeout(timer);
+        }
+        timer = setTimeout(function () {
+          resize();
+        }, 200);
+      };
+    </script>
+  
 </html>
