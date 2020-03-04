@@ -56,15 +56,16 @@
       };
       
       (function () {
-        var timer = 0;
-        window.onresize = function () {
-        if (timer > 0) {
-          clearTimeout(timer);
-        }
-        timer = setTimeout(function () {
-          resize();
-        }, 200);
-      };
+          var timer = 0;
+          window.onresize = function () {
+          if (timer > 0) {
+            clearTimeout(timer);
+          }
+          timer = setTimeout(function () {
+            resize();
+          }, 200);
+        };
+      }());
     </script>
   
 </html>
