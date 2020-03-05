@@ -13,7 +13,11 @@
 
     <script>
       UnityLoader.SystemInfo.mobile = false;
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json",
+      {
+        onProgress: UnityProgress,
+        Module: { TOTAL_STACK: 6 * 1024 * 1024 }
+      });
     </script>
   </head>
   <body>
