@@ -20,6 +20,7 @@
   </assembly>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Framework.View.BaseView" preserve="all" />
+    <type fullname="Kannavi.View.SpotListView" preserve="all" />
     <type fullname="Kannavi.View.NameListCell" preserve="all" />
     <type fullname="Framework.View.ScrollRect" preserve="all" />
     <type fullname="Kannavi.View.NameListView" preserve="all" />
@@ -33,15 +34,14 @@
     <type fullname="Kannavi.View.MapView" preserve="all" />
     <type fullname="Kannavi.View.MapImage" preserve="all" />
     <type fullname="Framework.View.TableView" preserve="all" />
-    <type fullname="Kannavi.View.SpotListView" preserve="all" />
     <type fullname="Kannavi.Controller.MainController" preserve="all" />
+    <type fullname="Kannavi.Controller.SpotListController" preserve="all" />
     <type fullname="Kannavi.Model.GameCamera" preserve="all" />
     <type fullname="Kannavi.Model.Signboard" preserve="all" />
     <type fullname="Framework.Controller.NavigationController" preserve="all" />
     <type fullname="Kannavi.Model.Properties" preserve="all" />
     <type fullname="Kannavi.Model.User" preserve="all" />
     <type fullname="Kannavi.Model.Spot" preserve="all" />
-    <type fullname="Kannavi.Controller.SpotListController" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.UI.Image" preserve="all" />
