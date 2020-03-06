@@ -4,7 +4,6 @@
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.Shader" preserve="all" />
-    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Sprite" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
@@ -34,6 +33,7 @@
     <type fullname="Kannavi.View.MapView" preserve="all" />
     <type fullname="Kannavi.View.MapImage" preserve="all" />
     <type fullname="Framework.View.TableView" preserve="all" />
+    <type fullname="Kannavi.View.SpotListView" preserve="all" />
     <type fullname="Kannavi.Controller.MainController" preserve="all" />
     <type fullname="Kannavi.Model.GameCamera" preserve="all" />
     <type fullname="Kannavi.Model.Signboard" preserve="all" />
@@ -41,6 +41,7 @@
     <type fullname="Kannavi.Model.Properties" preserve="all" />
     <type fullname="Kannavi.Model.User" preserve="all" />
     <type fullname="Kannavi.Model.Spot" preserve="all" />
+    <type fullname="Kannavi.Controller.SpotListController" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.UI.Image" preserve="all" />
