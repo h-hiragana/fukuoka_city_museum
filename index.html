@@ -16,7 +16,10 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json",
       {
         onProgress: UnityProgress,
-        Module: { TOTAL_STACK: 6 * 1024 * 1024 }
+        Module: {
+          TOTAL_STACK: 6 * 1024 * 1024,
+          cacheControl: {"default": "immutable"}
+        }
       });
     </script>
   </head>
