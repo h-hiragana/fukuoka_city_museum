@@ -4,8 +4,6 @@
 }
 
 .webgl-content .header .title {
-  position: absolute;
-  top: 10px;
   height: 100%;
   float: left;
   font-family: Helvetica, Verdana, Arial, sans-serif;
