@@ -5,9 +5,9 @@
 }
 
 .webgl-content .header .title {
+  padding-top:  10PX;
   padding-left: 10px;
   float: left;
-  vertical-align: center;
 }
 
 .webgl-content .header img {
