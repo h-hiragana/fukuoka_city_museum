@@ -1,9 +1,9 @@
-.head {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 20px;
+.webgl-content .header {
+  margin-top: 5px;
+  height: 38px;
+  line-height: 38px;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-size: 18px;
 }
 
 .webgl-content * {
