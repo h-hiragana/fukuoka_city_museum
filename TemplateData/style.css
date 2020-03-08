@@ -1,10 +1,10 @@
 .webgl-content .header {
   height: 256px;
-  padding-top: 240px;
   padding-left:  10px;
 }
 
 .webgl-content .header .title {
+  top: 100px;
   height: 100%;
   float: left;
   font-family: Helvetica, Verdana, Arial, sans-serif;
