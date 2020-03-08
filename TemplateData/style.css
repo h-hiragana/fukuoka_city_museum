@@ -6,6 +6,12 @@
   font-size: 18px;
 }
 
+.webgl-content .header .title {
+  margin-left: 10px;
+  float: left;
+}
+
+
 .webgl-content .header img {
     width: 100%;
     height: 100%;
