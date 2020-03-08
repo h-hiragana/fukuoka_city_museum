@@ -1,3 +1,7 @@
+body {
+  background-color: white;
+}
+
 .webgl-content .header {
   height: 256px;
   font-family: Helvetica, Verdana, Arial, sans-serif;
@@ -19,7 +23,6 @@
 
 .webgl-content {
   position: absolute;
-  padding-top: 40px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
