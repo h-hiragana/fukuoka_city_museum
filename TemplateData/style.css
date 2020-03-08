@@ -1,18 +1,13 @@
-body {
-  background-color: white;
-}
-
 .webgl-content .header {
   height: 256px;
   font-family: Helvetica, Verdana, Arial, sans-serif;
   font-size: 46px;
+  padding-top: 120px;
   padding-left:  10px;
 }
 
 .webgl-content .header .title {
   float: left;
-  height: 100%;
-  padding-top:  130px;
 }
 
 .webgl-content * {
