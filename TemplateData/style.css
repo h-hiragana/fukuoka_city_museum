@@ -1,6 +1,9 @@
+body {
+  background-color: lightgray;
+}
+
 .webgl-content .header {
-  height: 512px;
-  background: lightgray;
+  height: 1024px;
 }
 
 .webgl-content * {
