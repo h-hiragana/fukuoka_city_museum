@@ -9,7 +9,8 @@
   font-family: Helvetica, Verdana, Arial, sans-serif;
   font-size: 46px;
   vertical-align: middle;
- text-align: center;
+  text-align: center;
+background-color: gray;
 }
 
 .webgl-content * {
