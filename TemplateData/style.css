@@ -1,16 +1,6 @@
 .webgl-content .header {
-  height: 256px;
-  padding-left:  10px;
-}
-
-.webgl-content .header .title {
-  height: 100%;
-  float: left;
-  font-family: Helvetica, Verdana, Arial, sans-serif;
-  font-size: 46px;
-  vertical-align: middle;
-  text-align: center;
-background-color: gray;
+  height: 512px;
+  background: lightgray;
 }
 
 .webgl-content * {
