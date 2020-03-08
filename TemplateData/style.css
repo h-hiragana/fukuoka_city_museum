@@ -8,6 +8,8 @@
   float: left;
   font-family: Helvetica, Verdana, Arial, sans-serif;
   font-size: 46px;
+  vertical-align: middle;
+ text-align: center;
 }
 
 .webgl-content * {
