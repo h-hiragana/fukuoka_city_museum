@@ -1,16 +1,15 @@
 .webgl-content .header {
-  margin: 5px;
-  height: 38px;
-  line-height: 38px;
+  margin: 10px;
+  height: 10vh;
+  line-height: 10vh;
   font-family: Helvetica, Verdana, Arial, sans-serif;
   font-size: 18px;
 }
 
 .webgl-content .header .title {
-  margin-left: 10px;
+  margin-left: 10vw;
   float: left;
 }
-
 
 .webgl-content .header img {
     width: 100%;
