@@ -4,6 +4,7 @@
 }
 
 .webgl-content .header .title {
+  position: absolute;
   top: 100px;
   height: 100%;
   float: left;
