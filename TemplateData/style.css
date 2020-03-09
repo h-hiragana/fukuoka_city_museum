@@ -139,29 +139,17 @@ body {
   bottom: 0;
   background: Darkgray;
   opacity: 0.6;
+  margin: 0 20px 20px 0;
 }
 
 #page_top a{
   position: relative;
   display: block;
+  top: 10px;
   width: 150px;
   height: 150px;
   text-decoration: none;
-}
-
-#page_top a::before{
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f106';
-  font-size: 75px;
-  color: #fff;
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+  font-size: 90px;
   text-align: center;
+  color: white;
 }
